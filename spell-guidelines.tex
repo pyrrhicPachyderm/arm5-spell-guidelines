@@ -1,0 +1,42 @@
+\documentclass[a5paper,11pt]{scrbook}
+\usepackage[a5paper]{geometry}
+
+\let\oldmaketitle\maketitle
+\renewcommand{\maketitle}{
+	\newgeometry{hmarginratio=1:1} %Make the cover page centred.
+	\oldmaketitle
+	\newgeometry{hmarginratio=2:3} %Restore the default margin ratio.
+}
+\renewcommand{\thechapter}{} %Disable chapter numbering.
+
+\title{Spell Guidelines Quick Reference}
+\subtitle{for Ars Magica Fifth Edition}
+\author{}
+\date{}
+
+\begin{document}
+\frontmatter
+\maketitle
+\mainmatter
+
+\chapter{Animal}
+
+\chapter{Aquam}
+
+\chapter{Auram}
+
+\chapter{Corpus}
+
+\chapter{Herbam}
+
+\chapter{Ignem}
+
+\chapter{Imaginem}
+
+\chapter{Mentem}
+
+\chapter{Terram}
+
+\chapter{Vim}
+
+\end{document}
